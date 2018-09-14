@@ -49,20 +49,20 @@ Nomes devem revelar uma intenção
 
 ```python
 def get_them():
-  list1 = []
-  for x in the_list:
-    if x[0] == 4:
-      list1.append(x)
-  return list1
+    list1 = []
+    for x in the_list:
+        if x[0] == 4:
+            list1.append(x)
+    return list1
 ```
 
 ```python
 def get_flagged_cells():
-  flagged_cells = []
-  for cell in game_board:
-    if cell[STATUS_VALUE] == FLAGGED:
-      flagged_cells.append(cell)
-  return flagged_cells
+    flagged_cells = []
+    for cell in game_board:
+        if cell[STATUS_VALUE] == FLAGGED:
+            flagged_cells.append(cell)
+    return flagged_cells
 ```
 
 ---
@@ -73,18 +73,18 @@ Nomes devem ser fáceis de pronunciar. Facilita nas discussões do time
 
 ```python
 class DtaRcrd102:
-  def __init__(self):
-    self.genymdhms = ...
-    self.modymdhms = ...
-    self.pszqint = "102"
+    def __init__(self):
+        self.genymdhms = ...
+        self.modymdhms = ...
+        self.pszqint = "102"
 ```
 
 ```python
 class Customer:
-  def __init__(self):
-    self.generationTimestamp = ...
-    self.modificationTimestamp = ...
-    self.recordId = "102"
+    def __init__(self):
+        self.generationTimestamp = ...
+        self.modificationTimestamp = ...
+        self.recordId = "102"
 ```
 
 ---
@@ -97,13 +97,13 @@ Quanto maior o escopo, mais específico deve ser o nome
 MAX_ITEMS_PER_PRODUCT = 5
 
 def list_active_items(self):
-  product_category = "active"
-  result = []
-  for product in list_products():
-    if product.category == product_category:
-      for i in range(0, MAX_ITEMS_PER_PRODUCT):
-        result.append(product)
-  return result
+    product_category = "active"
+    result = []
+    for product in list_products():
+        if product.category == product_category:
+            for i in range(0, MAX_ITEMS_PER_PRODUCT):
+                result.append(product)
+    return result
 ```
 
 ---
@@ -127,28 +127,28 @@ Use padrões na definição dos nomes. Reduz a chance de erros
 
 ```python
 class UserDB:
-  def find_users(self):
-    ...
+    def find_users(self):
+        ...
 
 class ProductsDB:
-  def list_all(self):
-    ...
+    def list_all(self):
+        ...
 
 class Categories:
-  def getCategories(self):
-    ...
+    def getCategories(self):
+        ...
 ```
 
 ```python
 class UsersDB:
-  def list_all(self):
-    ...
+    def list_all(self):
+        ...
 
 class ProductsDB:
-  def list_all(self):
-    ...
+    def list_all(self):
+        ...
 
 class CategoriesDB:
-  def list_all(self):
-    ...
+    def list_all(self):
+        ...
 ```
