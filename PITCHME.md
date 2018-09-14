@@ -94,17 +94,61 @@ class Customer:
 Quanto maior o escopo, mais específico deve ser o nome
 
 ```python
-class DtaRcrd102:
-  def __init__(self):
-    self.genymdhms = ...
-    self.modymdhms = ...
-    self.pszqint = "102"
+MAX_ITEMS_PER_PRODUCT = 5
+
+def list_active_items(self):
+  product_category = "active"
+  result = []
+  for product in list_products():
+    if product.category == product_category:
+      for i in range(0, MAX_ITEMS_PER_PRODUCT):
+        result.append(product)
+  return result
+```
+
+---
+
+## Nomes
+
+Evite nomes muito genéricos que possam confundir dependendo do contexto.
+
+Exemplos:
+
+- Processor
+- Data
+- Info
+- Manager
+
+---
+
+## Nomes
+
+Use padrões na definição dos nomes. Reduz a chance de erros
+
+```python
+class UserDB:
+  def find_users(self):
+    ...
+
+class ProductsDB:
+  def list_all(self):
+    ...
+
+class Categories:
+  def getCategories(self):
+    ...
 ```
 
 ```python
-class Customer:
-  def __init__(self):
-    self.generationTimestamp = ...
-    self.modificationTimestamp = ...
-    self.recordId = "102"
+class UsersDB:
+  def list_all(self):
+    ...
+
+class ProductsDB:
+  def list_all(self):
+    ...
+
+class CategoriesDB:
+  def list_all(self):
+    ...
 ```
