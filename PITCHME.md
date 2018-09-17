@@ -1,15 +1,23 @@
-# Boas práticas em desenvolvimento de software
+@title[Boas práticas em desenvolvimento de software]
 
-## Guilherme Garnier
+## Boas práticas em desenvolvimento de software
+
+### Guilherme Garnier
 
 ---
 
-# Por que seguir boas práticas?
+@snap[north text-white span-100]
+@size[1.5em](Por que seguir boas práticas?)
+@snapend
 
+@snap[south span-100]
+@ul[](false)
 - software nunca está pronto. Depois de entregue, precisa de manutenção
 - todo software tem bugs :/
 - código é lido muito mais vezes do que alterado: legibilidade é importante
 - você não sabe quem irá alterar esse código no futuro, qual o contexto da pessoa. Pode ser você mesmo, sem lembrar do contexto em que está agora
+@ulend
+@snapend
 
 ---
 
