@@ -1,4 +1,4 @@
----?image=blue.jpg&position=top&size=100% 75%
+---?image=blue.jpg&position=top&size=100% 70%
 @title[Boas práticas em desenvolvimento de software]
 
 @snap[north text-white span-100]
@@ -7,15 +7,16 @@
 
 @snap[south text-blue span-100]
 @size[1.8em](Guilherme Garnier)
+<br /><br />
 @snapend
 
 ---?image=blue.jpg&position=top&size=100% 20%
 
-@snap[north text-white span-100]
+@snap[north-west text-white span-100]
 @size[1.5em](Por que seguir boas práticas?)
 @snapend
 
-@snap[south span-100]
+@snap[west span-100]
 @ul[](false)
 - software nunca está pronto. Depois de entregue, precisa de manutenção
 - todo software tem bugs :/
