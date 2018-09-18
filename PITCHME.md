@@ -1,10 +1,15 @@
+---?image=blue.jpg&position=top&size=100% 75%
 @title[Boas práticas em desenvolvimento de software]
 
-## Boas práticas em desenvolvimento de software
+@snap[north text-white span-100]
+@size[2.7em](Boas práticas em desenvolvimento de software)
+@snapend
 
-### Guilherme Garnier
+@snap[south text-blue span-100]
+@size[1.8em](Guilherme Garnier)
+@snapend
 
----
+---?image=blue.jpg&position=top&size=100% 20%
 
 @snap[north text-white span-100]
 @size[1.5em](Por que seguir boas práticas?)
