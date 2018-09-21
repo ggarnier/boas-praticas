@@ -17,6 +17,7 @@
 @snapend
 
 @snap[west span-100]
+<br>
 @ul[](false)
 - software nunca está pronto. Depois de entregue, precisa de manutenção
 - todo software tem bugs :/
@@ -25,41 +26,72 @@
 @ulend
 @snapend
 
----
+---?image=blue.jpg&position=top&size=100% 20%
 
-## Por que modificar um software?
+@snap[north-west text-white span-100]
+@size[1.5em](Por que modificar um software?)
+@snapend
 
+@snap[west span-100]
+<br>
+@ul[](false)
 - correção de bugs
 - novas features
 - melhorias no design
 - otimizações no uso de recursos
+@ulend
+@snapend
 
----
+---?image=blue.jpg&position=top&size=100% 20%
 
-# Como melhorar a qualidade do código
+@snap[north-west text-white span-100]
+@size[1.5em](Como melhorar a qualidade do código)
+@snapend
 
+@snap[west span-100]
+<br>
+@ul[](false)
 - clean code
 - padrões
 - testes
+@ulend
+@snapend
 
----
+---?image=blue.jpg&position=left&size=40% 100%
 
-# Clean code
+@title[Clean Code]
 
+@snap[west span-30 text-white]
+@size[2.7em](Clean Code)
+@snapend
+
+@snap[east span-70]
 ![](images/wtfm.jpg)
+@snapend
 
----
+---?image=blue.jpg&position=top&size=100% 20%
 
+@snap[north-west text-white span-100]
+@size[1.5em](Clean Code)
+@snapend
+
+@snap[west span-100]
+<br>
+@ul[](false)
 - código ruim pode funcionar, mas dificulta a manutenção
 - trabalhar com código ruim é como tentar encontrar um objeto no escuro. Código limpo é como acender a luz antes de procurar
 - clean code é o código que deixa claras suas intenções e é fácil de refatorar
 - pressa não é motivo para abrir mão da qualidade. Um médico não deixaria de lavar as mãos ou seguir procedimentos de segurança antes de uma cirurgia por pressa
+@ulend
+@snapend
 
----
+---?color=darkslategrey&image=blue.jpg&position=top&size=100% 20%
 
-## Nomes
+@snap[north-west text-white span-100]
+@size[1.5em](Nomes devem revelar uma intenção)
+@snapend
 
-Nomes devem revelar uma intenção
+<br>
 
 ```python
 def get_them():
@@ -68,9 +100,7 @@ def get_them():
         if x[0] == 4:
             list1.append(x)
     return list1
-```
 
-```python
 def get_flagged_cells():
     flagged_cells = []
     for cell in game_board:
@@ -78,6 +108,9 @@ def get_flagged_cells():
             flagged_cells.append(cell)
     return flagged_cells
 ```
+
+@[1-6](ruim)
+@[8-13](bom)
 
 ---
 
