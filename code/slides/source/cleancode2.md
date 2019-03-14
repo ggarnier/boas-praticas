@@ -1,0 +1,4 @@
+- código ruim pode funcionar, mas dificulta a manutenção
+- trabalhar com código ruim é como tentar encontrar um objeto no escuro. Código limpo é como acender a luz antes de procurar
+- clean code é o código que deixa claras suas intenções e é fácil de refatorar
+- pressa não é motivo para abrir mão da qualidade. Um médico não deixaria de lavar as mãos ou seguir procedimentos de segurança antes de uma cirurgia por pressa

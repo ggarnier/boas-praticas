@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Boas práticas em desenvolvimento de software</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				      <section data-markdown>
+        <script type="text/template">
+          # Boas práticas em desenvolvimento de software
+
+## Guilherme Garnier
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Por que seguir boas práticas?
+
+- software nunca está pronto. Depois de entregue, precisa de manutenção
+- todo software tem bugs :/
+- código é lido muito mais vezes do que alterado: legibilidade é importante
+- você não sabe quem irá alterar esse código no futuro, qual o contexto da pessoa. Pode ser você mesmo, sem lembrar do contexto em que está agora
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Por que modificar um software?
+
+- correção de bugs
+- novas features
+- melhorias no design
+- otimizações no uso de recursos
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Como melhorar a qualidade do código
+
+- clean code
+- padrões
+- testes
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Benefícios
+
+- código padronizado: facilita a leitura e compreensão
+  - ex: padrões de nomes de funções e variáveis, nomes e organização de arquivos
+- facilita a manutenção futura. Quanto mais fácil compreender o que faz o código, mais fácil será modificá-lo, e menor a chance de introduzir bugs
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Clean code
+
+![](static/wtfm.jpg)
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          - código ruim pode funcionar, mas dificulta a manutenção
+- trabalhar com código ruim é como tentar encontrar um objeto no escuro. Código limpo é como acender a luz antes de procurar
+- clean code é o código que deixa claras suas intenções e é fácil de refatorar
+- pressa não é motivo para abrir mão da qualidade. Um médico não deixaria de lavar as mãos ou seguir procedimentos de segurança antes de uma cirurgia por pressa
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Princípios
+
+1. nomear corretamente variáveis, classes, funções, arquivos, etc
+2. sistematizar - cada coisa em seu lugar
+3. limpeza - identação correta, remover código comentado
+4. padronização - todo o time deve seguir os mesmos padrões
+5. disciplina - seguir as regras que foram acordadas
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Nomes
+
+Nomes devem revelar uma intenção
+
+<div style="display: flex">
+<pre style="flex-grow: 1"><code class="lang-python hljs">
+def get_them():
+  list1 = []
+  for x in the_list:
+    if x[0] == 4:
+      list1.append(x)
+  return list1
+</code></pre>
+
+<pre class="fragment" data-fragment-index="1" style="flex-grow: 1"><code class="lang-python hljs">
+def get_flagged_cells():
+  flagged_cells = []
+  for cell in game_board:
+    if cell[STATUS_VALUE] == FLAGGED:
+      flagged_cells.append(cell)
+  return flagged_cells
+</code></pre>
+</div>
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Nomes
+
+```python
+def get_flagged_cells():
+  flagged_cells = []
+  for cell in game_board:
+    if cell[STATUS_VALUE] == FLAGGED:
+      flagged_cells.append(cell)
+  return flagged_cells
+```
+
+        </script>
+      </section>
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+        width: 1280,
+        height: 800,
+        history: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
